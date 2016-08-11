@@ -6,7 +6,8 @@
 # install_github("marcoplebani85/crypto")
 
 
-################################################################################
+###############################################################################st.files(path = "test/", pattern = "test/*\\.(log|csv|slog)$", ignore.case=TRUE); :
+*#
 # https://rforge.net/doc/packages/PKI/PKI.crypt.html
 # http://stackoverflow.com/questions/5806308/how-do-i-encrypt-data-in-r
 ################################################################################
