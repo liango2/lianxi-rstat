@@ -1,3 +1,13 @@
+# 概述
+# mysql
+# show variables like ‘character_set_%’;
+# SET character_set_database=”utf8”;
+# SET character_set_server=”utf8”;
+
+#dbSendQuery(con,'SET NAMES utf8')  
+#dbSendQuery(conn,"INSERT INTO test(f1) values('xxxx')");
+
+# 例子
 # install.packages("RMySQL")
 library(RMySQL)  
 help(package="RMySQL") #查看RMySQL的说明文档，里面有RMySQL所有可用的方法  
