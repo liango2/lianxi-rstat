@@ -18,7 +18,8 @@ dbRemoveTable(con,"test")
 #写数据库表  
 fruits <-data.frame(id=1:5,name=c("苹果","香蕉","梨子","玉米","西瓜"),price=c(8.8,4.98,7.8,6,2.1),status=c("无","打折","无","售罄","批发"))  
 dbListTables(con)  
-dbWriteTable(con,"test",fruits)  
+#dbWriteTable(con,"test",fruits,row.names=FALSE)  # dbWriteTable 默认 保存 row_names
+dbWriteTable(con,"test",fruits,row.names=FALSE)   # dbWriteTable 不保存 row_names
 dbListTables(con)  
 dbReadTable(con,"test")#中文出现乱码，这是因为字符编码格式不统一的问题  
 dbSendQuery(con,'SET NAMES utf8')  
